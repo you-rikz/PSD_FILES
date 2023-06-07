@@ -1,0 +1,44 @@
+<VirtualHost :80>
+    DocumentRoot "D:\xampp\htdocs"
+    ServerName localhost
+    ServerAlias.localhost
+</VirtualHost>
+
+<VirtualHost :80>
+    ServerAdmin noreply@localhost
+    DocumentRoot "D:\PDC10\arnold.local"
+    ServerName pdc10.local
+    <Directory "D:\PDC10\arnold.local">
+    Options All
+    AllowOverride All
+    Require all granted
+    </Directory>
+    ErrorLog "logs/error.log"
+    CustomLog "logs/access.log" common
+</VirtualHost>
+
+<VirtualHost:80>
+    ServerAdmin noreply@localhost
+    DocumentRoot "D:\PDC10\lim.local"
+    ServerName mangune.local
+    <Directory "D:\PDC10\lim.local">
+    Options All
+    AllowOverride All
+    Require all granted
+    </Directory>
+    ErrorLog "logs/error.log"
+    CustomLog "logs/access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin noreply@localhost
+    DocumentRoot "D:\PDC10\pdc10.local"
+    ServerName jello.local
+    <Directory "D:\PDC10\pdc10.local">
+    Options All
+    AllowOverride All
+    Require all granted
+    </Directory>
+    ErrorLog "logs/error.log"
+    CustomLog "logs/access.log" common
+</VirtualHost>

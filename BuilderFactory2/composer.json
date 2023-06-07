@@ -1,0 +1,15 @@
+{
+    "name": "arnol/builder-factory2",
+    "autoload": {
+        "psr-4": {
+            "Arnol\\BuilderFactory2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "you-rikz",
+            "email": "arnoldlim0337@gmail.com"
+        }
+    ],
+    "require": {}
+}
